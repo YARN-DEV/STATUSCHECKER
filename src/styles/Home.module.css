@@ -28,10 +28,20 @@
 }
 
 .main {
+  flex: 1;
+  background: #000000; /* Set to black */
+  padding: 1rem; /* Reduced padding */
+  width: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px; /* Reduced gap */
   grid-row-start: 2;
+  color: white; /* Set text color to white */
+}
+
+.main h2, .main p {
+  color: white; /* Ensure h2 and p texts are white */
 }
 
 .main ol {
@@ -51,7 +61,7 @@
 .main code {
   font-family: inherit;
   background: var(--gray-alpha-100);
-  padding: 2px 4px;
+  padding: 2px 0px;
   border-radius: 4px;
   font-weight: 600;
 }
@@ -59,6 +69,7 @@
 .ctas {
   display: flex;
   gap: 16px;
+  justify-content: center; /* Center the buttons */
 }
 
 .ctas a {
@@ -93,9 +104,14 @@ a.secondary {
 }
 
 .footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
   grid-row-start: 3;
   display: flex;
   gap: 24px;
+  margin-top: 20px;
+  color: #777; /* Example footer text color */
 }
 
 .footer a {
@@ -106,6 +122,96 @@ a.secondary {
 
 .footer img {
   flex-shrink: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8; /* Example background color */
+}
+
+.hero {
+  width: 100%;
+  height: 50vh; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+}
+
+.header {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 8px; /* Added gap between buttons */
+  justify-content: center; /* Center the buttons */
+}
+
+.buttons .btn {
+  margin: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Example text color */
+}
+
+.formContainer {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #555; /* Example label color */
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Example button color */
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Example button hover color */
 }
 
 /* Enable hover only on non-touch devices */
@@ -147,7 +253,7 @@ a.secondary {
   .ctas a {
     font-size: 14px;
     height: 40px;
-    padding: 0 16px;
+    padding: 0 0px;
   }
 
   a.secondary {
