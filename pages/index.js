@@ -1,6 +1,6 @@
 import Head from "next/head";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from "@/styles/Home.module.css";
+import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import { Carousel } from 'react-bootstrap';
 import { useState } from 'react';
