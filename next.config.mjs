@@ -1,10 +1,10 @@
-// filepath: c:\Users\Hp\Desktop\YG FOLDER\code\status checker\my-nextjs-app\next.config.mjs
+// filepath: c:\Users\Hp\Desktop\YG FOLDER\code\status checker\next.config.js
 const isProd = process.env.NODE_ENV === 'production';
 
-export default {
+module.exports = {
   reactStrictMode: true,
   basePath: isProd ? '/yarn-dev' : '',
-  assetPrefix: isProd ? '/statuschecker/' : '',
+  assetPrefix: isProd ? '/STATUSCHECKER/' : '',
   devIndicators: {
     buildActivity: false,
   },
